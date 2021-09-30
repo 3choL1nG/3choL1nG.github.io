@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Hexo Theme Keep">
+    <meta name="description" content="Hexo Theme Keep">
+    <meta name="author" content="3choL1nG">
+    
+    <title>
+        
+            Springboot高级 |
+        
+        3cho&#39;s blog
+    </title>
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <link rel="shortcut icon" href="/images/logo.svg">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/css/font-awesome.min.css">
+    <script id="hexo-configurations">
+    let KEEP = window.KEEP || {};
+    KEEP.hexo_config = {"hostname":"example.com","root":"/","language":"en","path":"search.json"};
+    KEEP.theme_config = {"toc":{"enable":true,"number":true,"expand_all":false,"init_open":false},"style":{"primary_color":"#0066CC","avatar":"/images/avatar.svg","favicon":"/images/logo.svg","article_img_align":"left","left_side_width":"260px","content_max_width":"920px","hover":{"shadow":false,"scale":true},"first_screen":{"enable":true,"background_img":"/images/bg.svg","description":"乾坤未定，你我皆是黑马."},"scroll":{"progress_bar":{"enable":true},"percent":{"enable":true}}},"local_search":{"enable":true,"preload":true},"code_copy":{"enable":true,"style":"mac"},"pjax":{"enable":true},"lazyload":{"enable":true},"version":"3.4.3"};
+    KEEP.language_ago = {"second":"%s seconds ago","minute":"%s minutes ago","hour":"%s hours ago","day":"%s days ago","week":"%s weeks ago","month":"%s months ago","year":"%s years ago"};
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+
+
+<body>
+<div class="progress-bar-container">
+    
+        <span class="scroll-progress-bar"></span>
+    
+
+    
+        <span class="pjax-progress-bar"></span>
+        <span class="pjax-progress-icon">
+            <i class="fas fa-circle-notch fa-spin"></i>
+        </span>
+    
+</div>
+
+
+<main class="page-container">
+
+    
+
+    <div class="page-main-content">
+
+        <div class="page-main-content-top">
+            <header class="header-wrapper">
+
+    <div class="header-content">
+        <div class="left">
+            
+            <a class="logo-title" href="/">
+                3cho&#39;s blog
+            </a>
+        </div>
+
+        <div class="right">
+            <div class="pc">
+                <ul class="menu-list">
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/"
+                            >
+                                HOME
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/archives"
+                            >
+                                ARCHIVES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/categories"
+                            >
+                                CATEGORIES
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/tags"
+                            >
+                                TAGS
+                            </a>
+                        </li>
+                    
+                        <li class="menu-item">
+                            <a class=""
+                               href="/about"
+                            >
+                                ABOUT
+                            </a>
+                        </li>
+                    
+                    
+                        <li class="menu-item search search-popup-trigger">
+                            <i class="fas fa-search"></i>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="mobile">
+                
+                    <div class="icon-item search search-popup-trigger"><i class="fas fa-search"></i></div>
+                
+                <div class="icon-item menu-bar">
+                    <div class="menu-bar-middle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-drawer">
+        <ul class="drawer-menu-list">
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/">HOME</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/archives">ARCHIVES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/categories">CATEGORIES</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/tags">TAGS</a>
+                </li>
+            
+                <li class="drawer-menu-item flex-center">
+                    <a class=""
+                       href="/about">ABOUT</a>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="window-mask"></div>
+
+</header>
+
+
+        </div>
+
+        <div class="page-main-content-middle">
+
+            <div class="main-content">
+
+                
+                    <div class="fade-in-down-animation">
+    <div class="article-content-container">
+
+        <div class="article-title">
+            <span class="title-hover-animation">Springboot高级</span>
+        </div>
+
+        
+            <div class="article-header">
+                <div class="avatar">
+                    <img src="/images/avatar.svg">
+                </div>
+                <div class="info">
+                    <div class="author">
+                        <span class="name">3choL1nG</span>
+                        
+                            <span class="author-label">Lv1</span>
+                        
+                    </div>
+                    <div class="meta-info">
+                        <div class="article-meta-info">
+    <span class="article-date article-meta-item">
+        <i class="fas fa-edit"></i>&nbsp;2021-09-30 19:04:47
+    </span>
+    
+        <span class="article-categories article-meta-item">
+            <i class="fas fa-folder"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/categories/Java%E5%9F%BA%E7%A1%80/">Java基础</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+    
+        <span class="article-tags article-meta-item">
+            <i class="fas fa-tags"></i>&nbsp;
+            <ul>
+                
+                    <li>
+                        <a href="/tags/Java/">Java</a>&nbsp;
+                    </li>
+                
+                    <li>
+                        | <a href="/tags/Springboot/">Springboot</a>&nbsp;
+                    </li>
+                
+            </ul>
+        </span>
+    
+
+    
+    
+        <span class="article-wordcount article-meta-item">
+            <i class="fas fa-file-word"></i>&nbsp;<span>3.5k Words</span>
+        </span>
+    
+    
+    
+</div>
+
+                    </div>
+                </div>
+            </div>
+        
+
+        <div class="article-content markdown-body">
+            <h2 id="01-SpringBoot高级-今日内容"><a href="#01-SpringBoot高级-今日内容" class="headerlink" title="01-SpringBoot高级-今日内容"></a><strong>01-SpringBoot高级-今日内容</strong></h2><ul>
+<li> SpringBoot自定配置</li>
+<li>SpringBoot事件监听</li>
+<li>SpringBoot流程分析</li>
+<li>SpringBoot监控</li>
+<li>SpringBoot部署</li>
+</ul>
+<h2 id="02-SpringBoot自动配置-Condition-1"><a href="#02-SpringBoot自动配置-Condition-1" class="headerlink" title="02-SpringBoot自动配置-Condition-1"></a><strong>02-SpringBoot自动配置-Condition-1</strong></h2><p> Condition是Spring4.0后引入的条件化配置接口，通过实现Condition接口可以完成有条件的加载相应的Bean</p>
+<p>@Conditional要配和Condition的实现类（ClassCondition）进行使用</p>
+<ul>
+<li>ClassCondition</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">ClassCondition</span> <span class="keyword">implements</span> <span class="title">Condition</span> </span>&#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> context 上下文对象。用于获取环境，IOC容器，ClassLoader对象</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> metadata 注解元对象。 可以用于获取注解定义的属性值</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@return</span></span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">matches</span><span class="params">(ConditionContext context, AnnotatedTypeMetadata metadata)</span> </span>&#123;</span><br><span class="line">      </span><br><span class="line">        <span class="comment">//1.需求： 导入Jedis坐标后创建Bean</span></span><br><span class="line">        <span class="comment">//思路：判断redis.clients.jedis.Jedis.class文件是否存在</span></span><br><span class="line">        <span class="keyword">boolean</span> flag = <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">try</span> &#123;</span><br><span class="line">            Class&lt;?&gt; cls = Class.forName(<span class="string">&quot;redis.clients.jedis.Jedis&quot;</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (ClassNotFoundException e) &#123;</span><br><span class="line">            flag = <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> flag;</span><br><span class="line">      </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>UserConfig</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="meta">@Conditional(ClassCondition.class)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">user</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> User();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringbootConditionApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//启动SpringBoot的应用，返回Spring的IOC容器</span></span><br><span class="line">        ConfigurableApplicationContext context = SpringApplication.run(SpringbootConditionApplication.class, args);</span><br><span class="line"></span><br><span class="line">        Object user = context.getBean(<span class="string">&quot;user&quot;</span>);</span><br><span class="line">        System.out.println(user);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="03-SpringBoot自动配置-Condition-2"><a href="#03-SpringBoot自动配置-Condition-2" class="headerlink" title="03-SpringBoot自动配置-Condition-2"></a><strong>03-SpringBoot自动配置-Condition-2</strong></h2><p> 需求：将类的判断定义为动态的。判断哪个字节码文件存在可以动态指定。</p>
+<p>自定义条件注解类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Conditional;</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">@Target(&#123;ElementType.TYPE, ElementType.METHOD&#125;)</span></span><br><span class="line"><span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line"><span class="meta">@Conditional(ClassCondition.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> ConditionOnClass &#123;</span><br><span class="line">    String[] value();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：</strong>此处@ConditionOnClass为自定义注解</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">UserConfig</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="comment">//@Conditional(ClassCondition.class)</span></span><br><span class="line">    <span class="meta">@ConditionOnClass(&quot;com.alibaba.fastjson.JSON&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">user</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> User();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="meta">@ConditionalOnProperty(name = &quot;itcast&quot;,havingValue = &quot;itheima&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> User <span class="title">user2</span><span class="params">()</span></span>&#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> User();</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>测试User对象的创建</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringbootConditionApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        <span class="comment">//启动SpringBoot的应用，返回Spring的IOC容器</span></span><br><span class="line">        ConfigurableApplicationContext context = SpringApplication.run(SpringbootConditionApplication.class, args);</span><br><span class="line"></span><br><span class="line">        Object user = context.getBean(<span class="string">&quot;user&quot;</span>);</span><br><span class="line">        System.out.println(user);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>查看条件注解源码</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/3choL1nG/image-hosting/master/20210930/image.1tzd0s8ylgyo.png"
+                      alt="image"
+                ></p>
+<p><strong>SpringBoot 提供的常用条件注解：</strong></p>
+<p>ConditionalOnProperty：判断配置文件中是否有对应属性和值才初始化Bean</p>
+<p>ConditionalOnClass：判断环境中是否有对应字节码文件才初始化Bean</p>
+<p>ConditionalOnMissingBean：判断环境中没有对应Bean才初始化Bean</p>
+<h2 id="04-SpringBoot自动配置-切换内置web服务器"><a href="#04-SpringBoot自动配置-切换内置web服务器" class="headerlink" title="04-SpringBoot自动配置-切换内置web服务器"></a><strong>04-SpringBoot自动配置-切换内置web服务器</strong></h2><p>查看继承关系图</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/3choL1nG/image-hosting/master/20210930/image.3zyxph1m0eg.png"
+                      alt="image"
+                ></p>
+<p>排除Tomcat</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/3choL1nG/image-hosting/master/20210930/image.73vwx4vbgeo0.png"
+                      alt="image"
+                ></p>
+<p>pom文件中的排除依赖效果</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">           <span class="comment">&lt;!--排除tomcat依赖--&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">exclusions</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">exclusion</span>&gt;</span></span><br><span class="line">                   <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-tomcat<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">                   <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;/<span class="name">exclusion</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="name">exclusions</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">       <span class="comment">&lt;!--引入jetty的依赖--&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-jetty<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="05-SpringBoot自动配置-Enable注解原理"><a href="#05-SpringBoot自动配置-Enable注解原理" class="headerlink" title="05-SpringBoot自动配置-Enable注解原理"></a>05-SpringBoot自动配置-Enable注解原理</h2><ul>
+<li><p>SpringBoot不能直接获取在其他工程中定义的Bean</p>
+<p>演示代码：</p>
+<p>springboot-enable工程</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@ComponentScan</span> 扫描范围：当前引导类所在包及其子包</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * com.itheima.springbootenable</span></span><br><span class="line"><span class="comment"> * com.itheima.config</span></span><br><span class="line"><span class="comment"> * //1.使用<span class="doctag">@ComponentScan</span>扫描com.itheima.config包</span></span><br><span class="line"><span class="comment"> * //2.可以使用<span class="doctag">@Import</span>注解，加载类。这些类都会被Spring创建，并放入IOC容器</span></span><br><span class="line"><span class="comment"> * //3.可以对Import注解进行封装。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//@ComponentScan(&quot;com.itheima.config&quot;)</span></span><br><span class="line"><span class="comment">//@Import(UserConfig.class)</span></span><br><span class="line"><span class="meta">@EnableUser</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringbootEnableApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        ConfigurableApplicationContext context = SpringApplication.run(SpringbootEnableApplication.class, args);</span><br><span class="line"></span><br><span class="line">     <span class="comment">//获取Bean</span></span><br><span class="line">        Object user = context.getBean(<span class="string">&quot;user&quot;</span>);</span><br><span class="line">        System.out.println(user);</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>pom中引入springboot-enable-other</p>
+<pre><code>   &lt;dependency&gt;
+         &lt;groupId&gt;com.itheima&lt;/groupId&gt;
+       &lt;artifactId&gt;springboot-enable-other&lt;/artifactId&gt;
+         &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;
+   &lt;/dependency&gt;
+</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">springboot-enable-other工程</span><br><span class="line"></span><br><span class="line">**UserConfig**</span><br><span class="line"></span><br><span class="line">```java</span><br><span class="line">@Configuration</span><br><span class="line">public class UserConfig &#123;</span><br><span class="line"></span><br><span class="line">    @Bean</span><br><span class="line">  public User user() &#123;</span><br><span class="line">        return new User();</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line"> </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p><strong>EnableUser注解类</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">  <span class="keyword">import</span> org.springframework.context.annotation.Import;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">import</span> java.lang.annotation.*;</span><br><span class="line">  </span><br><span class="line">  <span class="meta">@Target(ElementType.TYPE)</span></span><br><span class="line">  <span class="meta">@Retention(RetentionPolicy.RUNTIME)</span></span><br><span class="line"><span class="meta">@Documented</span></span><br><span class="line">  <span class="meta">@Import(UserConfig.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="meta">@interface</span> EnableUser &#123;</span><br><span class="line">  </span><br><span class="line">&#125;</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
+
+<p><strong>原因</strong>：@ComponentScan 扫描范围：当前引导类所在包及其子包</p>
+<p><strong>三种解决方案：</strong></p>
+<p>1.使用@ComponentScan扫描com.itheima.config包 </p>
+<p>2.可以使用@Import注解，加载类。这些类都会被Spring创建，并放入IOC容器</p>
+<p>3.可以对Import注解进行封装。</p>
+<p><strong>重点：Enable注解底层原理是使用@Import注解实现Bean的动态加载</strong></p>
+</li>
+</ul>
+<h2 id="06-SpringBoot自动配置-Import详解"><a href="#06-SpringBoot自动配置-Import详解" class="headerlink" title="06-SpringBoot自动配置-@Import详解"></a><strong>06-SpringBoot自动配置-@Import详解</strong></h2><p>@Enable*底层依赖于@Import注解导入一些类，使用@Import导入的类会被Spring加载到IOC容器中。而@Import提供4中用法：</p>
+<p>①导入Bean</p>
+<p>②导入配置类</p>
+<p>③导入 ImportSelector 实现类。一般用于加载配置文件中的类</p>
+<p>④导入 ImportBeanDefinitionRegistrar 实现类。</p>
+<ul>
+<li><p>导入Bean  @Import(User.class)</p>
+</li>
+<li><p>导入配置类  @Import(UserConfig.class)</p>
+</li>
+<li><p>导入 ImportSelector 实现类   @Import(MyImportSelector.class)</p>
+<p>MyImportSelector</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyImportSelector</span> <span class="keyword">implements</span> <span class="title">ImportSelector</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> String[] selectImports(AnnotationMetadata importingClassMetadata) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> String[]&#123;<span class="string">&quot;com.itheima.domain.User&quot;</span>, <span class="string">&quot;com.itheima.domain.Role&quot;</span>&#125;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li><p>导入 ImportBeanDefinitionRegistrar 实现类。@Import({MyImportBeanDefinitionRegistrar.class})</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyImportBeanDefinitionRegistrar</span> <span class="keyword">implements</span> <span class="title">ImportBeanDefinitionRegistrar</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">registerBeanDefinitions</span><span class="params">(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry)</span> </span>&#123;</span><br><span class="line">        AbstractBeanDefinition beanDefinition = BeanDefinitionBuilder.rootBeanDefinition(User.class).getBeanDefinition();</span><br><span class="line">        registry.registerBeanDefinition(<span class="string">&quot;user&quot;</span>, beanDefinition);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>SpringbootEnableApplication测试代码</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"> <span class="comment">/**</span></span><br><span class="line"><span class="comment">* Import4中用法：</span></span><br><span class="line"><span class="comment">  *  1. 导入Bean</span></span><br><span class="line"><span class="comment">  *  2. 导入配置类</span></span><br><span class="line"><span class="comment">  *  3. 导入ImportSelector的实现类。</span></span><br><span class="line"><span class="comment">  *  4. 导入ImportBeanDefinitionRegistrar实现类</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"></span><br><span class="line"> <span class="comment">//@Import(User.class)</span></span><br><span class="line"> <span class="comment">//@Import(UserConfig.class)</span></span><br><span class="line"> <span class="comment">//@Import(MyImportSelector.class)</span></span><br><span class="line"> <span class="comment">//@Import(&#123;MyImportBeanDefinitionRegistrar.class&#125;)</span></span><br><span class="line"></span><br><span class="line"> <span class="meta">@SpringBootApplication</span></span><br><span class="line"> <span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringbootEnableApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">     <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">         ConfigurableApplicationContext context = SpringApplication.run(SpringbootEnableApplication.class, args);</span><br><span class="line">     </span><br><span class="line">         <span class="comment">/*//获取Bean</span></span><br><span class="line"><span class="comment">         Object user = context.getBean(&quot;user&quot;);</span></span><br><span class="line"><span class="comment">         System.out.println(user);*/</span></span><br><span class="line">     </span><br><span class="line">         <span class="comment">/*User user = context.getBean(User.class);</span></span><br><span class="line"><span class="comment">         System.out.println(user);</span></span><br><span class="line"><span class="comment">     </span></span><br><span class="line"><span class="comment">         Role role = context.getBean(Role.class);</span></span><br><span class="line"><span class="comment">         System.out.println(role);*/</span></span><br><span class="line">     </span><br><span class="line">       <span class="comment">/*  Object user = context.getBean(&quot;user&quot;);</span></span><br><span class="line"><span class="comment">         System.out.println(user);*/</span></span><br><span class="line">      Map&lt;String, User&gt; map = context.getBeansOfType(User.class);</span><br><span class="line">         System.out.println(map);</span><br><span class="line">     </span><br><span class="line">     &#125;</span><br><span class="line"></span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+<p>@EnableAutoConfiguration中使用的是第三种方式：@Import(AutoConfigurationImportSelector.class)</p>
+<h2 id="07-SpringBoot自动配置-EnableAutoConfiguration详解"><a href="#07-SpringBoot自动配置-EnableAutoConfiguration详解" class="headerlink" title="07-SpringBoot自动配置-@EnableAutoConfiguration详解"></a><strong>07-SpringBoot自动配置-@EnableAutoConfiguration详解</strong></h2><p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="img/1571387384701.png"
+                      alt="1571387384701"
+                ></p>
+<ul>
+<li><p>@EnableAutoConfiguration 注解内部使用 @Import(AutoConfigurationImportSelector.<strong>class</strong>)来加载配置类。 </p>
+</li>
+<li><p>配置文件位置：META-INF/spring.factories，该配置文件中定义了大量的配置类，当 SpringBoot 应用启动时，会自动加载这些配置类，初始化Bean</p>
+</li>
+<li><p>并不是所有的Bean都会被初始化，在配置类中使用Condition来加载满足条件的Bean</p>
+</li>
+</ul>
+<h2 id="08-SpringBoot自动配置-自定义starter步骤分析"><a href="#08-SpringBoot自动配置-自定义starter步骤分析" class="headerlink" title="08-SpringBoot自动配置-自定义starter步骤分析"></a><strong>08-SpringBoot自动配置-自定义starter步骤分析</strong></h2><p><strong>需求：</strong>自定义redis-starter。要求当导入redis坐标时，SpringBoot自动创建Jedis的Bean。</p>
+<p><strong>步骤：</strong></p>
+<p>①创建 redis-spring-boot-autoconfigure 模块</p>
+<p>②创建 redis-spring-boot-starter 模块,依赖 redis-spring-boot-autoconfigure的模块</p>
+<p>③在 redis-spring-boot-autoconfigure 模块中初始化 Jedis 的 Bean。并定义META-INF/spring.factories 文件</p>
+<p>④在测试模块中引入自定义的 redis-starter 依赖，测试获取 Jedis 的Bean，操作 redis。</p>
+<h2 id="09-SpringBoot自动配置-自定义starter实现-1"><a href="#09-SpringBoot自动配置-自定义starter实现-1" class="headerlink" title="09-SpringBoot自动配置-自定义starter实现-1"></a><strong>09-SpringBoot自动配置-自定义starter实现-1</strong></h2><ol>
+<li><strong>创建redis-spring-boot-starter工程</strong></li>
+</ol>
+<p>​         pom文件中引入redis-spring-boot-autoconfigure</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--引入configure--&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.itheima<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>redis-spring-boot-autoconfigure<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><strong>创建redis-spring-boot-autoconfigure配置工程</strong>  </li>
+</ol>
+<p>创建RedisProperties配置文件参数绑定类 </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@ConfigurationProperties(prefix = &quot;redis&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisProperties</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> String host = <span class="string">&quot;localhost&quot;</span>;</span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">int</span> port = <span class="number">6379</span>;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">getHost</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> host;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setHost</span><span class="params">(String host)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.host = host;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">getPort</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> port;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">setPort</span><span class="params">(<span class="keyword">int</span> port)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">this</span>.port = port;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 创建RedisAutoConfiguration自动配置类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableConfigurationProperties(RedisProperties.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisAutoConfiguration</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 提供Jedis的bean</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Jedis <span class="title">jedis</span><span class="params">(RedisProperties redisProperties)</span> </span>&#123;</span><br><span class="line">       </span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Jedis(redisProperties.getHost(), redisProperties.getPort());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<p>在resource目录下创建META-INF文件夹并创建spring.factories</p>
+<p>注意：”\ “是换行使用的</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">org.springframework.boot.autoconfigure.EnableAutoConfiguration</span>=<span class="string">\</span></span><br><span class="line"><span class="string">  com.itheima.redis.config.RedisAutoConfiguration</span></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li><strong>在springboot-enable工程中引入自定义的redis的starter</strong></li>
+</ol>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--自定义的redis的starter--&gt;</span><br><span class="line">      &lt;dependency&gt;</span><br><span class="line">          &lt;groupId&gt;com.itheima&lt;/groupId&gt;</span><br><span class="line">          &lt;artifactId&gt;redis-spring-boot-starter&lt;/artifactId&gt;</span><br><span class="line">          &lt;version&gt;0.0.1-SNAPSHOT&lt;/version&gt;</span><br><span class="line">      &lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在SpringbootEnableApplication启动类中测试</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Jedis jedis = context.getBean(Jedis.class);</span><br><span class="line">       System.out.println(jedis);</span><br></pre></td></tr></table></figure>
+
+<h2 id="10-SpringBoot自动配置-自定义starter实现-2"><a href="#10-SpringBoot自动配置-自定义starter实现-2" class="headerlink" title="10-SpringBoot自动配置-自定义starter实现-2"></a><strong>10-SpringBoot自动配置-自定义starter实现-2</strong></h2><p>测试springboot-enable工程中的application.properties中的配置参数</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">redis.port</span>=<span class="string">6666</span></span><br></pre></td></tr></table></figure>
+
+<p>使用注解完成有条件加载配置类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableConfigurationProperties(RedisProperties.class)</span></span><br><span class="line"><span class="meta">@ConditionalOnClass(Jedis.class)</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">RedisAutoConfiguration</span> </span>&#123;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 提供Jedis的bean</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="meta">@ConditionalOnMissingBean(name = &quot;jedis&quot;)</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Jedis <span class="title">jedis</span><span class="params">(RedisProperties redisProperties)</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;RedisAutoConfiguration....&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> Jedis(redisProperties.getHost(), redisProperties.getPort());</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="11-SpringBoot事件监听"><a href="#11-SpringBoot事件监听" class="headerlink" title="11-SpringBoot事件监听"></a><strong>11-SpringBoot事件监听</strong></h2><p> Java中的事件监听机制定义了以下几个角色：</p>
+<p>①事件：Event，继承 java.util.EventObject 类的对象</p>
+<p>②事件源：Source ，任意对象Object</p>
+<p>③监听器：Listener，实现 java.util.EventListener 接口 的对象</p>
+<p>SpringBoot 在项目启动时，会对几个监听器进行回调，我们可以实现这些监听器接口，在项目启动时完成一些操作。</p>
+<ul>
+<li><p>ApplicationContextInitializer、</p>
+</li>
+<li><p>SpringApplicationRunListener、</p>
+</li>
+<li><p>CommandLineRunner、</p>
+</li>
+<li><p>ApplicationRunner</p>
+<p>自定义监听器的启动时机：MyApplicationRunner和MyCommandLineRunner都是当项目启动后执行，使用@Component放入容器即可使用</p>
+</li>
+</ul>
+<p>MyApplicationRunner</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 当项目启动后执行run方法。</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyApplicationRunner</span> <span class="keyword">implements</span> <span class="title">ApplicationRunner</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">(ApplicationArguments args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;ApplicationRunner...run&quot;</span>);</span><br><span class="line">        System.out.println(Arrays.asList(args.getSourceArgs()));</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br></pre></td></tr></table></figure>
+
+<p> MyCommandLineRunner</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Component</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">MyCommandLineRunner</span> <span class="keyword">implements</span> <span class="title">CommandLineRunner</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">(String... args)</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;CommandLineRunner...run&quot;</span>);</span><br><span class="line">        System.out.println(Arrays.asList(args));</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>MyApplicationContextInitializer的使用要在resource文件夹下添加META-INF/spring.factories</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">org.springframework.context.ApplicationContextInitializer</span>=<span class="string">com.itheima.springbootlistener.listener.MyApplicationContextInitializer</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@Component</span><br><span class="line">public class MyApplicationContextInitializer implements ApplicationContextInitializer &#123;</span><br><span class="line">    @Override</span><br><span class="line">    public void initialize(ConfigurableApplicationContext applicationContext) &#123;</span><br><span class="line">        System.out.println(&quot;ApplicationContextInitializer....initialize&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>MySpringApplicationRunListener的使用要添加<strong>构造器</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line">public class MySpringApplicationRunListener implements SpringApplicationRunListener &#123;</span><br><span class="line"></span><br><span class="line">    public MySpringApplicationRunListener(SpringApplication application, String[] args) &#123;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void starting() &#123;</span><br><span class="line">        System.out.println(&quot;starting...项目启动中&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void environmentPrepared(ConfigurableEnvironment environment) &#123;</span><br><span class="line">        System.out.println(&quot;environmentPrepared...环境对象开始准备&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void contextPrepared(ConfigurableApplicationContext context) &#123;</span><br><span class="line">        System.out.println(&quot;contextPrepared...上下文对象开始准备&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void contextLoaded(ConfigurableApplicationContext context) &#123;</span><br><span class="line">        System.out.println(&quot;contextLoaded...上下文对象开始加载&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void started(ConfigurableApplicationContext context) &#123;</span><br><span class="line">        System.out.println(&quot;started...上下文对象加载完成&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void running(ConfigurableApplicationContext context) &#123;</span><br><span class="line">        System.out.println(&quot;running...项目启动完成，开始运行&quot;);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    @Override</span><br><span class="line">    public void failed(ConfigurableApplicationContext context, Throwable exception) &#123;</span><br><span class="line">        System.out.println(&quot;failed...项目启动失败&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="12-SpringBoot流程分析-初始化"><a href="#12-SpringBoot流程分析-初始化" class="headerlink" title="12-SpringBoot流程分析-初始化"></a><strong>12-SpringBoot流程分析-初始化</strong></h2><ol>
+<li><p> 配置启动引导类（判断是否有启动主类）</p>
+</li>
+<li><p>判断是否是Web环境</p>
+</li>
+<li><p>获取初始化类、监听器类</p>
+</li>
+</ol>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/3choL1nG/image-hosting/master/20210930/image.250gtah4vw2o.png"
+                      alt="image"
+                ></p>
+<h2 id="13-SpringBoot流程分析-run"><a href="#13-SpringBoot流程分析-run" class="headerlink" title="13-SpringBoot流程分析-run"></a><strong>13-SpringBoot流程分析-run</strong></h2><ol>
+<li><p>启动计时器</p>
+</li>
+<li><p>执行监听器</p>
+</li>
+<li><p>准备环境</p>
+</li>
+<li><p> 打印banner：可以resource下粘贴自定义的banner</p>
+</li>
+<li><p>创建context</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">refreshContext(context);</span><br></pre></td></tr></table></figure>
+
+<p>执行refreshContext方法后才真正创建Bean</p>
+</li>
+</ol>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/3choL1nG/image-hosting/master/20210930/image.3ariq0daov80.png"
+                      alt="image"
+                ></p>
+<h2 id="14-SpringBoot监控-actuator基本使用"><a href="#14-SpringBoot监控-actuator基本使用" class="headerlink" title="14-SpringBoot监控-actuator基本使用"></a><strong>14-SpringBoot监控-actuator基本使用</strong></h2><p> ①导入依赖坐标</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line"></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-starter-actuator<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>②访问<a class="link"   target="_blank" rel="noopener" href="http://localhost:8080/acruator" >http://localhost:8080/acruator<i class="fas fa-external-link-alt"></i></a></p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;_links&quot;</span>:&#123;</span><br><span class="line">        <span class="attr">&quot;self&quot;</span>:&#123;</span><br><span class="line">            <span class="attr">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;templated&quot;</span>:<span class="literal">false</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">&quot;health&quot;</span>:&#123;</span><br><span class="line">            <span class="attr">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/health&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;templated&quot;</span>:<span class="literal">false</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">&quot;health-component-instance&quot;</span>:&#123;</span><br><span class="line">            <span class="attr">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/health/&#123;component&#125;/&#123;instance&#125;&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;templated&quot;</span>:<span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">&quot;health-component&quot;</span>:&#123;</span><br><span class="line">            <span class="attr">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/health/&#123;component&#125;&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;templated&quot;</span>:<span class="literal">true</span></span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">&quot;info&quot;</span>:&#123;</span><br><span class="line">            <span class="attr">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/info&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;templated&quot;</span>:<span class="literal">false</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><a class="link"   target="_blank" rel="noopener" href="http://localhost:8080/actuator/info" >http://localhost:8080/actuator/info<i class="fas fa-external-link-alt"></i></a></p>
+<p>在application.properties中配置</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">info.name</span>=<span class="string">lucy</span></span><br><span class="line"><span class="meta">info.age</span>=<span class="string">99</span></span><br></pre></td></tr></table></figure>
+
+<p><a class="link"   target="_blank" rel="noopener" href="http://localhost:8080/actuator/health" >http://localhost:8080/actuator/health<i class="fas fa-external-link-alt"></i></a></p>
+<p>开启健康检查详细信息</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">management.endpoint.health.show-details</span>=<span class="string">always</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;status&quot;</span>:<span class="string">&quot;UP&quot;</span>,</span><br><span class="line">    <span class="attr">&quot;details&quot;</span>:&#123;</span><br><span class="line">        <span class="attr">&quot;diskSpace&quot;</span>:&#123;</span><br><span class="line">            <span class="attr">&quot;status&quot;</span>:<span class="string">&quot;UP&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;details&quot;</span>:&#123;</span><br><span class="line">                <span class="attr">&quot;total&quot;</span>:<span class="number">159579508736</span>,</span><br><span class="line">                <span class="attr">&quot;free&quot;</span>:<span class="number">13558104064</span>,</span><br><span class="line">                <span class="attr">&quot;threshold&quot;</span>:<span class="number">10485760</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="attr">&quot;redis&quot;</span>:&#123;</span><br><span class="line">            <span class="attr">&quot;status&quot;</span>:<span class="string">&quot;UP&quot;</span>,</span><br><span class="line">            <span class="attr">&quot;details&quot;</span>:&#123;</span><br><span class="line">                <span class="attr">&quot;version&quot;</span>:<span class="string">&quot;2.4.5&quot;</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="15-SpringBoot监控-actuator开启所有endpoint"><a href="#15-SpringBoot监控-actuator开启所有endpoint" class="headerlink" title="15-SpringBoot监控-actuator开启所有endpoint"></a><strong>15-SpringBoot监控-actuator开启所有endpoint</strong></h2><p> 开启所有endpoint</p>
+<p>在application.properties中配置：</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">management.endpoints.web.exposure.include</span>=<span class="string">*</span></span><br></pre></td></tr></table></figure>
+
+<p>开启所有endpoint的返回结果：</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">&#123;</span></span><br><span class="line">    <span class="meta">&quot;_links&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">        <span class="meta">&quot;self&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;auditevents&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/auditevents&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;beans&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/beans&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;caches-cache&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/caches/&#123;cache&#125;&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">true</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;caches&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/caches&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;health-component-instance&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/health/&#123;component&#125;/&#123;instance&#125;&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">true</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;health&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/health&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;health-component&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/health/&#123;component&#125;&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">true</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;conditions&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/conditions&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;configprops&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/configprops&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;env&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/env&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;env-toMatch&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/env/&#123;toMatch&#125;&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">true</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;info&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/info&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;loggers&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/loggers&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;loggers-name&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/loggers/&#123;name&#125;&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">true</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;heapdump&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/heapdump&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;threaddump&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/threaddump&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;metrics-requiredMetricName&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/metrics/&#123;requiredMetricName&#125;&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">true</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;metrics&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/metrics&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;scheduledtasks&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/scheduledtasks&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;httptrace&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/httptrace&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;,</span></span><br><span class="line">        <span class="meta">&quot;mappings&quot;</span>:<span class="string">&#123;</span></span><br><span class="line">            <span class="meta">&quot;href&quot;</span>:<span class="string">&quot;http://localhost:8080/actuator/mappings&quot;,</span></span><br><span class="line">            <span class="meta">&quot;templated&quot;</span>:<span class="string">false</span></span><br><span class="line">        <span class="attr">&#125;</span></span><br><span class="line">    <span class="attr">&#125;</span></span><br><span class="line"><span class="attr">&#125;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="16-SpringBoot监控-springboot-admin图形化界面使用"><a href="#16-SpringBoot监控-springboot-admin图形化界面使用" class="headerlink" title="16-SpringBoot监控-springboot admin图形化界面使用"></a><strong>16-SpringBoot监控-springboot admin图形化界面使用</strong></h2><p>SpringBoot Admin 有两个角色，客户端(Client)和服务端(Server)。</p>
+<p>以下为创建服务端和客户端工程步骤：</p>
+<p>admin-server：</p>
+<p>①创建 admin-server 模块</p>
+<p>②导入依赖坐标 admin-starter-server</p>
+<p><img  
+                     lazyload
+                     src="/images/loading.svg"
+                     data-src="https://raw.githubusercontent.com/3choL1nG/image-hosting/master/20210930/image.11cu5c03rqc0.png"
+                      alt="image"
+                ></p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>de.codecentric<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-admin-starter-server<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>③在引导类上启用监控功能@EnableAdminServer</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@EnableAdminServer</span></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringbootAdminServerApplication</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(SpringbootAdminServerApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>admin-client：</p>
+<p>①创建 admin-client 模块</p>
+<p>②导入依赖坐标 admin-starter-client</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>de.codecentric<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-admin-starter-client<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>③配置相关信息：server地址等</p>
+<figure class="highlight properties"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 执行admin.server地址</span></span><br><span class="line"><span class="meta">spring.boot.admin.client.url</span>=<span class="string">http://localhost:9000</span></span><br><span class="line"></span><br><span class="line"><span class="meta">management.endpoint.health.show-details</span>=<span class="string">always</span></span><br><span class="line"><span class="meta">management.endpoints.web.exposure.include</span>=<span class="string">*</span></span><br></pre></td></tr></table></figure>
+
+<p>④启动server和client服务，访问server</p>
+<h2 id="17-SpringBoot部署"><a href="#17-SpringBoot部署" class="headerlink" title="17-SpringBoot部署"></a><strong>17-SpringBoot部署</strong></h2><p> SpringBoot 项目开发完毕后，支持两种方式部署到服务器：</p>
+<p>①jar包(官方推荐)</p>
+<p>②war包</p>
+<p><strong>更改pom文件中的打包方式为war</strong></p>
+<p>修改启动类</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.boot.SpringApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.builder.SpringApplicationBuilder;</span><br><span class="line"><span class="keyword">import</span> org.springframework.boot.web.servlet.support.SpringBootServletInitializer;</span><br><span class="line"></span><br><span class="line"><span class="meta">@SpringBootApplication</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">SpringbootDeployApplication</span> <span class="keyword">extends</span> <span class="title">SpringBootServletInitializer</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String[] args)</span> </span>&#123;</span><br><span class="line">        SpringApplication.run(SpringbootDeployApplication.class, args);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> SpringApplicationBuilder <span class="title">configure</span><span class="params">(SpringApplicationBuilder builder)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">return</span> builder.sources(SpringbootDeployApplication.class);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<p>指定打包的名称</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">build</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">finalName</span>&gt;</span>springboot<span class="tag">&lt;/<span class="name">finalName</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;<span class="name">plugins</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;<span class="name">plugin</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">               <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-maven-plugin<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">           <span class="tag">&lt;/<span class="name">plugin</span>&gt;</span></span><br><span class="line">       <span class="tag">&lt;/<span class="name">plugins</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">build</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        
+            <div class="post-copyright-info">
+                <div class="article-copyright-info-container">
+    <ul>
+        <li>Post title：Springboot高级</li>
+        <li>Post author：3choL1nG</li>
+        <li>Create time：2021-09-30 19:04:47</li>
+        <li>
+            Post link：https://www.baidu.com/2021/09/30/SpringBoot高级/
+        </li>
+        <li>
+            Copyright Notice：All articles in this blog are licensed under <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">BY-NC-SA</a> unless stating additionally.
+        </li>
+    </ul>
+</div>
+
+            </div>
+        
+
+        
+            <div class="article-nav">
+                
+                    <div class="article-prev">
+                        <a class="prev"
+                           rel="prev"
+                           href="/2021/09/30/Springboot/"
+                        >
+                            <span class="left arrow-icon flex-center">
+                              <i class="fas fa-chevron-left"></i>
+                            </span>
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Springboot</span>
+                                <span class="post-nav-item">Prev posts</span>
+                            </span>
+                        </a>
+                    </div>
+                
+                
+                    <div class="article-next">
+                        <a class="next"
+                           rel="next"
+                           href="/2021/09/30/Mybaties-1/"
+                        >
+                            <span class="title flex-center">
+                                <span class="post-nav-title-item">Mybaties-1</span>
+                                <span class="post-nav-item">Next posts</span>
+                            </span>
+                            <span class="right arrow-icon flex-center">
+                              <i class="fas fa-chevron-right"></i>
+                            </span>
+                        </a>
+                    </div>
+                
+            </div>
+        
+
+        
+    </div>
+</div>
+
+
+                
+            </div>
+
+        </div>
+
+        <div class="page-main-content-bottom">
+            <footer class="footer">
+    <div class="info-container">
+        <div class="copyright-info info-item">
+            &copy;
+            
+              <span>2021</span>&nbsp;-&nbsp;
+            
+            2021&nbsp;<i class="fas fa-heart icon-animate"></i>&nbsp;<a href="/">3choL1nG</a>
+        </div>
+        
+            <script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            <div class="website-count info-item">
+                
+                    <span id="busuanzi_container_site_uv">
+                        Visitor Count&nbsp;<span id="busuanzi_value_site_uv"></span>&ensp;
+                    </span>
+                
+                
+                    <span id="busuanzi_container_site_pv">
+                        Totalview&nbsp;<span id="busuanzi_value_site_pv"></span>
+                    </span>
+                
+            </div>
+        
+        <div class="theme-info info-item">
+            Powered by <a target="_blank" href="https://hexo.io">Hexo</a>&nbsp;|&nbsp;Theme&nbsp;<a class="theme-version" target="_blank" href="https://github.com/XPoet/hexo-theme-keep">Keep v3.4.3</a>
+        </div>
+        
+    </div>
+</footer>
+
+        </div>
+    </div>
+
+    
+        <div class="post-tools">
+            <div class="post-tools-container">
+    <ul class="tools-list">
+        <!-- TOC aside toggle -->
+        
+            <li class="tools-item page-aside-toggle">
+                <i class="fas fa-outdent"></i>
+            </li>
+        
+
+        <!-- go comment -->
+        
+    </ul>
+</div>
+
+        </div>
+    
+
+    <div class="right-bottom-side-tools">
+        <div class="side-tools-container">
+    <ul class="side-tools-list">
+        <li class="tools-item tool-font-adjust-plus flex-center">
+            <i class="fas fa-search-plus"></i>
+        </li>
+
+        <li class="tools-item tool-font-adjust-minus flex-center">
+            <i class="fas fa-search-minus"></i>
+        </li>
+
+        <li class="tools-item tool-expand-width flex-center">
+            <i class="fas fa-arrows-alt-h"></i>
+        </li>
+
+        <li class="tools-item tool-dark-light-toggle flex-center">
+            <i class="fas fa-moon"></i>
+        </li>
+
+        <!-- rss -->
+        
+
+        
+
+        <li class="tools-item tool-scroll-to-bottom flex-center">
+            <i class="fas fa-arrow-down"></i>
+        </li>
+    </ul>
+
+    <ul class="exposed-tools-list">
+        <li class="tools-item tool-toggle-show flex-center">
+            <i class="fas fa-cog fa-spin"></i>
+        </li>
+        
+            <li class="tools-item tool-scroll-to-top flex-center">
+                <i class="arrow-up fas fa-arrow-up"></i>
+                <span class="percent"></span>
+            </li>
+        
+    </ul>
+</div>
+
+    </div>
+
+    
+        <aside class="page-aside">
+            <div class="post-toc-wrap">
+    <div class="post-toc">
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#01-SpringBoot%E9%AB%98%E7%BA%A7-%E4%BB%8A%E6%97%A5%E5%86%85%E5%AE%B9"><span class="nav-number">1.</span> <span class="nav-text">01-SpringBoot高级-今日内容</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#02-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-Condition-1"><span class="nav-number">2.</span> <span class="nav-text">02-SpringBoot自动配置-Condition-1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#03-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-Condition-2"><span class="nav-number">3.</span> <span class="nav-text">03-SpringBoot自动配置-Condition-2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#04-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-%E5%88%87%E6%8D%A2%E5%86%85%E7%BD%AEweb%E6%9C%8D%E5%8A%A1%E5%99%A8"><span class="nav-number">4.</span> <span class="nav-text">04-SpringBoot自动配置-切换内置web服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#05-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-Enable%E6%B3%A8%E8%A7%A3%E5%8E%9F%E7%90%86"><span class="nav-number">5.</span> <span class="nav-text">05-SpringBoot自动配置-Enable注解原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#06-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-Import%E8%AF%A6%E8%A7%A3"><span class="nav-number">6.</span> <span class="nav-text">06-SpringBoot自动配置-@Import详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#07-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-EnableAutoConfiguration%E8%AF%A6%E8%A7%A3"><span class="nav-number">7.</span> <span class="nav-text">07-SpringBoot自动配置-@EnableAutoConfiguration详解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#08-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-%E8%87%AA%E5%AE%9A%E4%B9%89starter%E6%AD%A5%E9%AA%A4%E5%88%86%E6%9E%90"><span class="nav-number">8.</span> <span class="nav-text">08-SpringBoot自动配置-自定义starter步骤分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#09-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-%E8%87%AA%E5%AE%9A%E4%B9%89starter%E5%AE%9E%E7%8E%B0-1"><span class="nav-number">9.</span> <span class="nav-text">09-SpringBoot自动配置-自定义starter实现-1</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#10-SpringBoot%E8%87%AA%E5%8A%A8%E9%85%8D%E7%BD%AE-%E8%87%AA%E5%AE%9A%E4%B9%89starter%E5%AE%9E%E7%8E%B0-2"><span class="nav-number">10.</span> <span class="nav-text">10-SpringBoot自动配置-自定义starter实现-2</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#11-SpringBoot%E4%BA%8B%E4%BB%B6%E7%9B%91%E5%90%AC"><span class="nav-number">11.</span> <span class="nav-text">11-SpringBoot事件监听</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#12-SpringBoot%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90-%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="nav-number">12.</span> <span class="nav-text">12-SpringBoot流程分析-初始化</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#13-SpringBoot%E6%B5%81%E7%A8%8B%E5%88%86%E6%9E%90-run"><span class="nav-number">13.</span> <span class="nav-text">13-SpringBoot流程分析-run</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#14-SpringBoot%E7%9B%91%E6%8E%A7-actuator%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8"><span class="nav-number">14.</span> <span class="nav-text">14-SpringBoot监控-actuator基本使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#15-SpringBoot%E7%9B%91%E6%8E%A7-actuator%E5%BC%80%E5%90%AF%E6%89%80%E6%9C%89endpoint"><span class="nav-number">15.</span> <span class="nav-text">15-SpringBoot监控-actuator开启所有endpoint</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#16-SpringBoot%E7%9B%91%E6%8E%A7-springboot-admin%E5%9B%BE%E5%BD%A2%E5%8C%96%E7%95%8C%E9%9D%A2%E4%BD%BF%E7%94%A8"><span class="nav-number">16.</span> <span class="nav-text">16-SpringBoot监控-springboot admin图形化界面使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#17-SpringBoot%E9%83%A8%E7%BD%B2"><span class="nav-number">17.</span> <span class="nav-text">17-SpringBoot部署</span></a></li></ol>
+    </div>
+</div>
+        </aside>
+    
+
+    <div class="image-viewer-container">
+    <img src="">
+</div>
+
+
+    
+        <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+          <span class="search-input-field-pre">
+            <i class="fas fa-keyboard"></i>
+          </span>
+            <div class="search-input-container">
+                <input autocomplete="off"
+                       autocorrect="off"
+                       autocapitalize="off"
+                       placeholder="Search..."
+                       spellcheck="false"
+                       type="search"
+                       class="search-input"
+                >
+            </div>
+            <span class="popup-btn-close">
+                <i class="fas fa-times"></i>
+            </span>
+        </div>
+        <div id="search-result">
+            <div id="no-result">
+                <i class="fas fa-spinner fa-pulse fa-5x fa-fw"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+</main>
+
+
+
+<script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/utils.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/main.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/header-shrink.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/back2top.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/dark-light-toggle.js"></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/local-search.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/code-copy.js"></script>
+
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/lazyload.js"></script>
+
+
+<div class="post-scripts pjax">
+    
+        <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/left-side-toggle.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/libs/anime.min.js"></script><script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/toc.js"></script>
+    
+</div>
+
+
+    <script src="//cdn.jsdelivr.net/npm/hexo-theme-keep@3.4.3/source/js/libs/pjax.min.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        window.pjax = new Pjax({
+            selectors: [
+                'head title',
+                '.page-container',
+                '.pjax'
+            ],
+            history: true,
+            debug: false,
+            cacheBust: false,
+            timeout: 0,
+            analytics: false,
+            currentUrlFullReload: false,
+            scrollRestoration: false,
+            // scrollTo: true,
+        });
+
+        document.addEventListener('pjax:send', () => {
+            KEEP.utils.pjaxProgressBarStart();
+        });
+
+        document.addEventListener('pjax:complete', () => {
+            KEEP.utils.pjaxProgressBarEnd();
+            window.pjax.executeScripts(document.querySelectorAll('script[data-pjax], .pjax script'));
+            KEEP.refresh();
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
